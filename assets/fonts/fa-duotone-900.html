@@ -214,6 +214,15 @@ var offSide = {"side":"right"};
 				expirationDate.setTime( expirationDate.getTime() + 31536000 * 1000 );
 				document.cookie = "pll_language=es; expires=" + expirationDate.toUTCString() + "; path=/";
 			}());</script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            var yearElement = document.getElementById("copyright-year");
+            if (yearElement) {
+                yearElement.textContent = "2026";
+            }
+        });
+    </script>
 </body>
 </html>
 

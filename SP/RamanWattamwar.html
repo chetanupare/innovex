@@ -327,7 +327,7 @@
                                     <i class="far fa-phone"></i>
                                 </div>
                                 <div class="offcanvas__contact-text">
-                                    <a href="tel:+5717685086">+57 17685086, +57 316 492 6791</a>
+                                    <a href="tel:">+57 316 492 6791</a>
                                 </div>
                             </li>
                             <li class="d-flex align-items-center">
@@ -723,7 +723,7 @@
                     <div class="col-xxl-4 col-xl-4 col-lg-4">
                         <div class="doctor-author-thumb-wrapper wow fadeInLeft p-relative" data-wow-delay="0.3s">
                             <div class="doctor-author-thumb w-img">
-                                <img src="../assets/imgs/doctor/doctor-01.jpg" alt="">
+                                <img style="display: none;" src="../assets/imgs/doctor/doctor-01.jpg" alt="">
                             </div>
                             <div class="author-social">
                                 <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
@@ -833,9 +833,7 @@
                                 <div class="footer-info-item-2">
                                     <div class="footer-info-text-2">
                                         <p>
-                                            <i class="fa fa-mobile-alt"></i> <a href="tel:+573158293624">
-                                                +57 3164926791, +57 3167572646, <br />
-                                                &nbsp;&nbsp;&nbsp;&nbsp;+57 3158293624
+                                            <i class="fa fa-mobile-alt"></i> <a href="tel:+573158293624">&nbsp;&nbsp;&nbsp;&nbsp;+57 3158293624
                                             </a>
                                         </p>
                                     </div>
@@ -852,7 +850,7 @@
                         <div class="container">
                             <div class="footer-copyright-wrapper">
                                 <div class="footer-copyright-text">
-                                    <p class="mb-0">&copy; Copyright 2024 by <a target="_blank" href="#">INNOVEX</a></p>
+                                    <p class="mb-0">&copy; Copyright <span id="copyright-year">2026</span> by <a target="_blank" href="#">INNOVEX</a></p>
                                 </div>
                                 <!--<div class="footer-conditions">
                                     <p class="mb-0">Powered by <a target="_blank" href="#">FOVEA</a></p>
@@ -914,6 +912,15 @@
     <script src="../assets/js/ajax-form.js"></script>
     <script src="../assets/js/beforeafter.jquery-1.0.0.min.js"></script>
     <script src="../assets/js/main.js"></script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            var yearElement = document.getElementById("copyright-year");
+            if (yearElement) {
+                yearElement.textContent = "2026";
+            }
+        });
+    </script>
 </body>
 
 
